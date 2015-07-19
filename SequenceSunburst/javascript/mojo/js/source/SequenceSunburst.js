@@ -54,13 +54,14 @@
 
                 var color_hash = {};
 
-                initHTMLNodes();
+                
                 var svg = d3.select(this.domNode).select("svg");
                 if (svg.empty()) {
                     svg = d3.select(this.domNode).append("svg:svg");
                     svg.attr("width", width)
                         .attr("height", height)
                         .attr("y", margin);
+                initHTMLNodes();        
 
                 }
                 var container = svg.select("#container");
